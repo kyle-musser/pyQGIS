@@ -7,7 +7,7 @@ from qgis import processing
 
 os.chdir(r"C:/Users/kylem/Dropbox/Frye_Parker_DataCollection/data/gis")
 
-'''
+
 #Filepath for AIANNH and County Shapefiles
 #NOTE Using 2017 reservtion and counties but should be constant from 2010-2019.
 aiannhFL = 'tl_2017_us_aiannh'
@@ -101,9 +101,6 @@ processing.run("qgis:exportaddgeometrycolumns",
     'INPUT' : 'tl_2017_us_aiannhIntersect.shp',
     'OUTPUT' : 'tl_2017_us_aiannhIntersect2.shp'}
 )
-'''
-
-
 
 #Then do it the opposite way w/ Counties as the Input
 
